@@ -24,7 +24,7 @@ public class FormHandlingServiceImpl implements FormHandlingService {
         try {
             byte[] fileBytes = formUploadDTO.getProfileImage().getBytes();
 
-            String sql = "INSERT INTO users (name, email, profile_image) VALUES (?, ?, ?)";
+            String sql = "INSERT INTO form_data (name, email, profile_image) VALUES (?, ?, ?)";
 
             jdbcTemplate.update(sql,
                     formUploadDTO.getName(),

@@ -1,4 +1,4 @@
-CREATE TABLE users
+CREATE TABLE form_data
 (
     id            SERIAL PRIMARY KEY,
     name          VARCHAR(100)        NOT NULL,
